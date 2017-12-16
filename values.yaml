@@ -24,8 +24,18 @@ service:
     internalPort: 80
 
 resources:
-  newRelic: {}
-  nginx: {}
+  newRelic:
+    limits:
+      memory: "50Mi"
+      cpu: "1"
+    requests:
+      memory: "8Mi"
+  nginx:
+    limits:
+      memory: "50Mi"
+      cpu: "1"
+    requests:
+      memory: "2Mi"
 
 
 newRelic:
