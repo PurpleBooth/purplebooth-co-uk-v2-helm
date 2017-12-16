@@ -27,13 +27,13 @@ resources:
   newRelic:
     limits:
       memory: "50Mi"
-      cpu: "1"
+      cpu: "2m"
     requests:
       memory: "8Mi"
   nginx:
     limits:
       memory: "50Mi"
-      cpu: "1"
+      cpu: "2m"
     requests:
       memory: "2Mi"
 
